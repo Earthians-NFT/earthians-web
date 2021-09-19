@@ -224,24 +224,21 @@ p {
 }
 
 .hero-section {
-  padding-top: 242px;
-  padding-bottom: 242px;
+  height: 100vh;
 }
 
 .hero-section.centered {
   display: block;
-  padding-top: 250px;
-  padding-bottom: 195px;
   grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
   border: 2px none #000;
-  background-image: url('../images/Banner-Principal-2.jpg');
-  background-position: 50% 100%;
-  background-size: cover;
-  opacity: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.1)), to(rgba(46, 157, 255, 0.22))), url('../images/Banner-Principal-2.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 100%, rgba(46, 157, 255, 0.22)), url('../images/Banner-Principal-2.jpg');
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
   text-align: center;
   white-space: normal;
 }
@@ -264,14 +261,8 @@ p {
   text-transform: uppercase;
 }
 
-.hero-subheading {
-  margin-bottom: 40px;
-  color: #fff;
-  font-size: 25px;
-  line-height: 25px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+.heading-block {
+  padding-top: 150px;
 }
 
 .hollow-button {
@@ -1081,6 +1072,11 @@ p {
   background-attachment: fixed;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
+}
+
+#mint-button {
+  pointer-events: none;
+  cursor: default;
 }
 
 @media screen and (max-width: 991px) {
