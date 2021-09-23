@@ -582,6 +582,11 @@ p {
   box-shadow: 0 0 0 1px #00ffa3;;
 }
 
+.road-map:nth-child(3) {
+  background-color: #00ffa3;
+  box-shadow: 0 0 0 1px #00ffa3;;
+}
+
 .text-block {
   padding: 0px;
   font-family: Bitter, serif;
